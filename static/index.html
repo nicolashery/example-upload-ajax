@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Upload</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <h1>Upload</h1>
+
+    <form class="js-form" id="fileUploadForm" target="fileuploadtarget" method="POST" action="/api/upload?iframe" enctype="multipart/form-data">
+      <p>
+        <label for="usernameInput">Username:</label>
+        <input type="text" name="username" id="usernameInput">
+      </p>
+      <p>
+        <label for="fileUploadInput">Data file:</label>
+        <input type="file" name="fileUpload" id="fileUploadInput" accept="*/*">
+      </p>
+      <p>
+        <button type="submit" class="js-submit-ajax">Submit with ajax</button>
+        <span>   </span>
+        <button type="submit" class="js-submit-iframe">Submit with iframe</button>
+      </p>
+    </form>
+
+    <p>Message:</p>
+    <pre class="js-message"></pre>
+
+    <p>Hidden iframe:</p>
+    <iframe class="js-iframe-response" id="fileuploadtarget" name="fileuploadtarget" src="javascript:false" style=""></iframe>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>

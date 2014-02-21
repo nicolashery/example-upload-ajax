@@ -1,0 +1,13 @@
+{
+  "name": "example-upload-ajax",
+  "version": "0.0.0",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "connect-busboy": "0.0.1",
+    "connect-multiparty": "~1.0.3",
+    "express": "~3.4.8"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
